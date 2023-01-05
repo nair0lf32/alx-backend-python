@@ -7,4 +7,4 @@ then returns the float sum result of its elements
 
 def sum_list(input_list: list[float]) -> float:
     '''returns the sum'''
-    return float(sum(input_list))
+    return sum(input_list)
