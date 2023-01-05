@@ -6,10 +6,10 @@ a float by the given multiplier
 from typing import Callable
 
 
-def multiply(a: float, b: float) -> float:
-    return a * b
+def multiply(a: float) -> float:
+    return a * 3.14
 
 
-def make_multiplier(multiplier: float) -> Callable[[float,float], float]:
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     '''returns the tuple'''
-    return multiply(multiplier, 0.0)
+    return multiply(multiplier)
