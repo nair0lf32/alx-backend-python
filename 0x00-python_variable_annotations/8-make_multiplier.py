@@ -6,7 +6,7 @@ a float by the given multiplier
 from typing import Callable
 
 
-def multiply(a: float, b: float):
+def multiply(a: float, b: float) -> float:
     return a * b
 
 
