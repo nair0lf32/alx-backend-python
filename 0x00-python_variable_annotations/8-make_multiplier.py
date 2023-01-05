@@ -10,6 +10,6 @@ def multiply(a: float, b: float):
     return a * b
 
 
-def make_multiplier(multiplier: float) -> Callable[[float], float]:
+def make_multiplier(multiplier: float) -> Callable[[float,float], float]:
     '''returns the tuple'''
     return multiply(multiplier, 0.0)
