@@ -7,7 +7,7 @@ from typing import Sequence, Union, Any
 
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-    '''returns a list of tuples of element and its length'''
+    '''returns the first element if it exists'''
     if lst:
         return lst[0]
     else:
