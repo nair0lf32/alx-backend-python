@@ -6,10 +6,11 @@ a float by the given multiplier
 from typing import Callable
 
 
-def multiply(a: float):
-    return a * 3.14
-
-
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    '''returns the function'''
-    return multiply(multiplier)
+    '''returns the function multiply'''
+
+    def multiply(m: float) -> float:
+        '''does the multiplication'''
+        return float(m*multiplier)
+
+    return multiply
