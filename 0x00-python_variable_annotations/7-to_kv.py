@@ -7,5 +7,7 @@ from typing import Tuple, Union
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    '''returns the sum'''
-    return tuple(k, float(v*v))
+    '''returns the tuple'''
+    return (k, float(v*v))
+
+print(to_kv('k', 2))
